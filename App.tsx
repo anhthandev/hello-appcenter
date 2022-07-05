@@ -5,7 +5,7 @@ import codePush from "react-native-code-push";
 function App() {
   return (
     <View style={styles.container}>
-      <Text>Heyyo! Open up App.tsx to start working on your app!</Text>
+      <Text>Guys! Open up App.tsx to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -21,4 +21,8 @@ const styles = StyleSheet.create({
 });
 
 // export default App;
-export default codePush({ updateDialog: true, installMode: codePush.InstallMode.IMMEDIATE })(App);
+export default codePush({ 
+  checkFrequency: codePush.CheckFrequency.ON_APP_RESUME,
+  updateDialog: true, 
+  installMode: codePush.InstallMode.IMMEDIATE
+})(App);
