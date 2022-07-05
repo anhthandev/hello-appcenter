@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import codePush from "react-native-code-push";
 
-export default function App() {
+function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>Yo, Open up App.tsx to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -18,3 +19,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+// export default App;
+export default codePush({ updateDialog: true, installMode: codePush.InstallMode.IMMEDIATE })(App);
