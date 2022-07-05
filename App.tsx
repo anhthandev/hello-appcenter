@@ -5,7 +5,7 @@ import codePush from "react-native-code-push";
 function App() {
   return (
     <View style={styles.container}>
-      <Text>Yo, Open up App.tsx to start working on your app!</Text>
+      <Text>Heyyo! Open up App.tsx to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
   );
